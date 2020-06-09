@@ -8,6 +8,7 @@ public class Salary {
     @Expose
     int to;
     @Expose
+
     String currency;
 
     public Salary(int min, int max, String Cash) {
