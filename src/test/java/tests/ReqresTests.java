@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
+import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
 import static org.testng.Assert.assertEquals;
 
@@ -43,4 +44,5 @@ public class ReqresTests extends BaseTest{
                 .contentType(ContentType.JSON).extract().response();
         assertEquals(expected, response.asString().trim());
     }
+
 }

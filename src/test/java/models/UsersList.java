@@ -20,4 +20,6 @@ public class UsersList {
     int totalPages;
     @Expose
     List<User> data;
+    String currentUser;
+
 }
